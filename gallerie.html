@@ -1,0 +1,177 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/generic.css">
+	<link rel="stylesheet" href="js/simplelightbox/simpleLightbox.min.css">
+    <script src="js/simplelightbox/simpleLightbox.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar container navbar-expand-md navbar-dark fixed-top bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="horaires.html">Horaires</span></a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="danses.html">Danses</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="tarifs.html">Tarifs</a>
+            </li>
+			<li class="nav-item active">
+              <a class="nav-link" href="#">Gallerie <span class="sr-only">(current)</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+	
+	<!-- Begin page content -->
+    <main role="main" class="container">
+      <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+	  <div class="card-deck">
+		  <div class="card">
+			<a class="showGalleryPO2015FromArray" role="button">
+				<img src="images/PorteOuverte2015/IMG_0581.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Porte Ouverte 2015</h5>
+				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</a>
+		  </div>
+		  <div class="card">
+		    <a class="showGallerySO2015FromArray" role="button">
+				<img src="images/SoireeNov2015/IMG_6359_low.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Soirée Novembre 2015</h5>
+				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</a>
+		  </div>
+		  <div class="card">
+			<a class="showGalleryPO2016FromArray" role="button">
+				<img src="images/PorteOuverte2016/IMG_6779_low.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Porte ouverte Septembre 2016</h5>
+				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</a>
+		  </div>
+		  <div class="card">
+			<a class="showGallerySO2018MayFromArray" role="button">
+				<img src="images/Soiree26Mai18/DSC04861.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Soirée 26 mai 2018</h5>
+				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</a>
+		  </div>
+</div>
+	</main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Espace.danses@gmail.com 0475/987 526</span>
+      </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+			$('#header').load('navigationtop.html');
+			// http://dbrekalo.github.io/simpleLightbox/
+			$('.showGalleryPO2015FromArray').on('click', function() {
+				SimpleLightbox.open({
+					items: ['images/PorteOuverte2015/IMG_0581.jpg',
+							'images/PorteOuverte2015/IMG_0583.jpg',
+							'images/PorteOuverte2015/IMG_0584.jpg',
+							'images/PorteOuverte2015/IMG_0591.jpg',
+							'images/PorteOuverte2015/IMG_0593.jpg',
+							'images/PorteOuverte2015/IMG_0595.jpg',
+							'images/PorteOuverte2015/IMG_0596.jpg',
+							'images/PorteOuverte2015/IMG_0598.jpg',
+							'images/PorteOuverte2015/IMG_0610.jpg',
+							'images/PorteOuverte2015/IMG_0619.jpg',
+							'images/PorteOuverte2015/IMG_0622.jpg',
+							'images/PorteOuverte2015/IMG_0628.jpg',
+							'images/PorteOuverte2015/IMG_0629.jpg',
+							'images/PorteOuverte2015/IMG_0640.jpg',
+							'images/PorteOuverte2015/IMG_0642.jpg'],
+					closeText: 'X'
+				});
+			});
+			$('.showGallerySO2015FromArray').on('click', function() {
+				SimpleLightbox.open({
+					items: ['images/SoireeNov2015/IMG_6359_low.jpg',
+							'images/SoireeNov2015/IMG_6360_low.jpg',
+							'images/SoireeNov2015/IMG_6366_low.jpg',
+							'images/SoireeNov2015/IMG_6375_low.jpg',
+							'images/SoireeNov2015/IMG_6378_low.jpg',
+							'images/SoireeNov2015/IMG_6380_low.jpg',
+							'images/SoireeNov2015/IMG_6383_low.jpg',
+							'images/SoireeNov2015/IMG_6384_low.jpg',
+							'images/SoireeNov2015/IMG_6410_low.jpg',
+							'images/SoireeNov2015/IMG_6412_low.jpg'],
+					closeText: 'X'
+				});
+			});
+			$('.showGalleryPO2016FromArray').on('click', function() {
+				SimpleLightbox.open({
+					items: ['images/PorteOuverte2016/IMG_6779_low.jpg',
+							'images/PorteOuverte2016/IMG_6780_low.jpg',
+							'images/PorteOuverte2016/IMG_6781_low.jpg',
+							'images/PorteOuverte2016/IMG_6782.jpg',
+							'images/PorteOuverte2016/IMG_6783_low.jpg',
+							'images/PorteOuverte2016/IMG_6784_low.jpg',
+							'images/PorteOuverte2016/IMG_6785_low.jpg',
+							'images/PorteOuverte2016/IMG_6786_low.jpg',
+							'images/PorteOuverte2016/IMG_6787_low.jpg',
+							'images/PorteOuverte2016/IMG_6788_low.jpg',
+							'images/PorteOuverte2016/IMG_6789_low.jpg',
+							'images/PorteOuverte2016/IMG_6790_low.jpg',
+							'images/PorteOuverte2016/IMG_6791_low.jpg',
+							'images/PorteOuverte2016/IMG_6792_low.jpg',
+							'images/PorteOuverte2016/IMG_6783_low.jpg'],
+					closeText: 'X'
+				});
+			});
+			$('.showGallerySO2018MayFromArray').on('click', function() {
+				SimpleLightbox.open({
+					items: ['images/Soiree26Mai18/DSC04861.jpg',
+							'images/Soiree26Mai18/DSC04862.jpg',
+							'images/Soiree26Mai18/DSC04868.jpg',
+							'images/Soiree26Mai18/DSC04875.jpg',
+							'images/Soiree26Mai18/DSC04884.jpg',
+							'images/Soiree26Mai18/DSC04892.jpg',
+							'images/Soiree26Mai18/DSC04914.jpg',
+							'images/Soiree26Mai18/DSC04923.jpg',
+							'images/Soiree26Mai18/DSC04926.jpg',
+							'images/Soiree26Mai18/DSC04963.jpg',
+							'images/Soiree26Mai18/P003.jpg',
+							'images/Soiree26Mai18/P33.jpg',
+							'images/Soiree26Mai18/P35.jpg',
+							'images/Soiree26Mai18/P42.jpg',
+							'images/Soiree26Mai18/P44.jpg',
+							'images/Soiree26Mai18/P1000581.jpg',
+							'images/Soiree26Mai18/P1000583.jpg'],
+					closeText: 'X'
+				});
+			});
+		});
+	</script>
+  </body>
+</html>
