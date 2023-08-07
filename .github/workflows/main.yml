@@ -13,4 +13,6 @@ jobs:
       with:
         server: ftp.cluster010.hosting.ovh.net/www
         username: espacedar
+        protocol: ftps
+        port: 22
         password: ${{ secrets.FTPPASSWORD }}
