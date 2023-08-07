@@ -6,13 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.3.4
+      uses: actions/checkout@v2
     - name: Upload Files
-      id: upload
-      uses: Creepios/sftp-action@v1.0.3
+      uses: wangyucode/sftp-upload-action@v2.0.2
       with:
-        host: 'ftp.cluster010.hosting.ovh.net'
-        port: 22
-        username: 'espacedar'
+        host: ftp.cluster010.hosting.ovh.net
+        username: espacedar
         password: ${{ secrets.FTPPASSWORD }}
-        remotePath: 'www/'
+        localDir: '.'
+        remoteDir: '/www/'
