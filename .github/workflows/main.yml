@@ -9,11 +9,10 @@ jobs:
       with:
         fetch-depth: 2
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v3.1.1
       with:
         server: ftp.cluster010.hosting.ovh.net
         username: espacedar
         protocol: ftps
-        port: 22
         server-dir: www/
         password: ${{ secrets.FTPPASSWORD }}
