@@ -11,8 +11,9 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.cluster010.hosting.ovh.net/www
+        server: ftp.cluster010.hosting.ovh.net
         username: espacedar
         protocol: ftps
         port: 22
+        server-dir: www/
         password: ${{ secrets.FTPPASSWORD }}
